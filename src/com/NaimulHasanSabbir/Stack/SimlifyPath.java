@@ -3,7 +3,7 @@ package com.NaimulHasanSabbir.Stack;
 import java.util.Stack;
 
 public class SimlifyPath {
-    public String simlifyPath(String path) {
+    public static String simlifyPath(String path) {
         Stack<String> stack = new Stack<String>();
         StringBuilder sb = new StringBuilder();
 
@@ -23,5 +23,8 @@ public class SimlifyPath {
             }
         }
         return "/" + String.join("/", stack);
+    }
+    public static void main(String[] args){
+        System.out.print(simlifyPath("/home/"));
     }
 }
